@@ -104,7 +104,6 @@ struct {
     { "service.adb.tcp.port", AID_SHELL,    0 },
     { "persist.sys.",     AID_SYSTEM,   0 },
     { "persist.service.", AID_SYSTEM,   0 },
-    { "persist.security.", AID_SYSTEM,   0 },
     { "persist.security.",AID_SYSTEM,   0 },
 #ifdef USE_MOTOROLA_USERS
     // Motorola, w18335, 12-May-2011, IKTCMD-212
@@ -112,11 +111,11 @@ struct {
     { "persist.mot.proximity.", AID_RADIO, 0},
     { "mot.backup_restore.",AID_MOT_TCMD, 0},
     { "mot.",             AID_MOT_TCMD, 0 },
-    /* BEGIN Motorola, cjg040 */
+/* BEGIN Motorola, cjg040 */
     { "sys.",             AID_MOT_OSH,  0 },
     { "hw.",              AID_MOT_OSH,  0 },
-    /* END Motorola */
-    /* Motorola, a22976, 20-Oct-2010, IKSTABLETWOV-3218 */
+/* END Motorola */
+    // Motorola, a22976, 20-Oct-2010, IKSTABLETWOV-3218
     { "cdma.nbpcd.supported", AID_RADIO, AID_RADIO },
 // BEGIN Motorola, IKSTABLE6-5050
     { "vzw.inactivetimer",   AID_RADIO,    0 },
@@ -159,7 +158,6 @@ struct {
     { "mdm_usb_suspend", AID_RADIO, AID_RADIO },
 #endif
     { "ril-daemon",AID_RADIO, AID_RADIO },
-    {NULL, 0, 0 }
     { "rawip_vsnet1",AID_RADIO, AID_RADIO },
     { "rawip_vsnet2",AID_RADIO, AID_RADIO },
     { "rawip_vsnet3",AID_RADIO, AID_RADIO },
