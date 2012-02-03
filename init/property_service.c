@@ -104,9 +104,7 @@ struct {
     { "service.adb.tcp.port", AID_SHELL,    0 },
     { "persist.sys.",     AID_SYSTEM,   0 },
     { "persist.service.", AID_SYSTEM,   0 },
-<<<<<<< HEAD
     { "persist.security.", AID_SYSTEM,   0 },
-=======
     { "persist.security.",AID_SYSTEM,   0 },
 #ifdef USE_MOTOROLA_USERS
     // Motorola, w18335, 12-May-2011, IKTCMD-212
@@ -120,21 +118,12 @@ struct {
     /* END Motorola */
     /* Motorola, a22976, 20-Oct-2010, IKSTABLETWOV-3218 */
     { "cdma.nbpcd.supported", AID_RADIO, AID_RADIO },
-<<<<<<< HEAD
 // BEGIN Motorola, IKSTABLE6-5050
     { "vzw.inactivetimer",   AID_RADIO,    0 },
     { "persist.ril",         AID_RADIO,    0 },
     { "persist.lte",         AID_RADIO,    0 },
 // END Motorola, IKSTABLE6-5050
     // Motorola, vrwd38, IKSTABLEFOURV-3408
-=======
-    /* BEGIN Motorola, IKSTABLE6-5050 */
-    { "vzw.inactivetimer",   AID_RADIO,    0 },
-    { "persist.ril",         AID_RADIO,    0 },
-    { "persist.lte",         AID_RADIO,    0 },
-    /* END Motorola, IKSTABLE6-5050 */
-    /* Motorola, vrwd38, IKSTABLEFOURV-3408 */
->>>>>>> edc9675... changes
     { "hw.",              AID_MOT_WHISPER, 0 },
 #endif
     { "net.pdp0",         AID_RADIO,    AID_RADIO },
@@ -146,7 +135,6 @@ struct {
     { "net.vsnet1",       AID_RADIO,    AID_RADIO },
     { "net.vsnet2",       AID_RADIO,    AID_RADIO },
     { "net.vsnet3",       AID_RADIO,    AID_RADIO },
->>>>>>> 3231649... property service Motorola additions
     { NULL, 0, 0 }
 };
 
@@ -171,7 +159,6 @@ struct {
     { "mdm_usb_suspend", AID_RADIO, AID_RADIO },
 #endif
     { "ril-daemon",AID_RADIO, AID_RADIO },
-<<<<<<< HEAD
      {NULL, 0, 0 }
 =======
     { "rawip_vsnet1",AID_RADIO, AID_RADIO },
@@ -179,7 +166,6 @@ struct {
     { "rawip_vsnet3",AID_RADIO, AID_RADIO },
     { "rawip_vsnet4",AID_RADIO, AID_RADIO },
     {NULL, 0, 0 }
->>>>>>> 3231649... property service Motorola additions
 };
 
 typedef struct {
