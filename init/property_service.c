@@ -160,7 +160,6 @@ struct {
 #endif
     { "ril-daemon",AID_RADIO, AID_RADIO },
      {NULL, 0, 0 }
-=======
     { "rawip_vsnet1",AID_RADIO, AID_RADIO },
     { "rawip_vsnet2",AID_RADIO, AID_RADIO },
     { "rawip_vsnet3",AID_RADIO, AID_RADIO },
