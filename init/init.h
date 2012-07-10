@@ -73,7 +73,11 @@ struct svcenvinfo {
                                  so it can be restarted with its class */
 #define SVC_RC_DISABLED 0x80  /* Remember if the disabled flag was set in the rc script */
 
+#ifdef USE_MOTOROLA_CODE
+#define NR_SVC_SUPP_GIDS 26    /* number of supplementary groups */
+#else
 #define NR_SVC_SUPP_GIDS 12    /* twelve supplementary groups */
+#endif
 
 #define COMMAND_RETRY_TIMEOUT 5
 
@@ -112,6 +116,10 @@ struct service {
     int ioprio_class;
     int ioprio_pri;
 
+#ifdef USE_MOTOROLA_CODE
+    int allowrtprio;
+#endif
+
     int nargs;
     /* "MUST BE AT THE END OF THE STRUCT" */
     char *args[1];
@@ -131,6 +139,9 @@ void service_stop(struct service *svc);
 void service_reset(struct service *svc);
 void service_start(struct service *svc, const char *dynamic_args);
 void property_changed(const char *name, const char *value);
+#ifdef USE_MOTOROLA_CODE
+void device_changed(const char *name, int is_add);
+#endif
 
 #define INIT_IMAGE_FILE	"/initlogo.rle"
 
